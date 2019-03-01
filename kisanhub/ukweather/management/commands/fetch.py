@@ -3,7 +3,7 @@ import requests
 from django.core.management import BaseCommand
 class Command(BaseCommand):
 	
-	def handle(*args, **options):
+	def handle(self, *args, **options):
 		metrics = ['Tmax', 'Tmin', 'Rainfall']
 		locations = ['UK', 'England', 'Scotland', 'Wales']
 		data=[]
